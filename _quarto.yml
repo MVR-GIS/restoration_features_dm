@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "EQRI Analysis"
+  title: "Restoration Features"
   navbar:
     left:
       - href: index.qmd
