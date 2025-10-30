@@ -4,13 +4,62 @@
     "href": "index.html",
     "title": "Restoration Features Data Model",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "Restoration Features Data Model",
     "section": "",
-    "text": "About this site"
+    "text": "This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
+  },
+  {
+    "objectID": "index.html#problem",
+    "href": "index.html#problem",
+    "title": "Restoration Features Data Model",
+    "section": "Problem",
+    "text": "Problem\nData integration across USACE is hamstrung by a lack of data stardardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperability declines. USACE is not alone in this problem.\n\nOne problem is that data are insufficiently described to understand what they are or how they were produced. A second issue is that no single vocabulary provides all key metadata fields required to support basic scientific use cases. A third issue is that data catalogs and data repositories all use different metadata standards, if they use any standard at all, and this prevents easy search and aggregation of data. Therefore, we need a guide to indicate what are the essential metadata for a dataset description, and the manner in which we can express it.\n\nDataset Descriptions: HCLS Community Profile, W3C Interest Group Note 14 May 2015: https://www.w3.org/TR/hcls-dataset/"
+  },
+  {
+    "objectID": "index.html#objectives",
+    "href": "index.html#objectives",
+    "title": "Restoration Features Data Model",
+    "section": "Objectives",
+    "text": "Objectives\nTo address these problems, this project has adopted the following objectives:\n\nDevelop a process to document the data model of an existing system.\nDefine a methology for applying metadata standards to each level of a data model.\nProduce human-readable documentation for both developers and consumers.\nProduce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology.\nDefine a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time.\nDefine a generic process that can be applied to modeling any USACE data system."
+  },
+  {
+    "objectID": "index.html#workflow",
+    "href": "index.html#workflow",
+    "title": "Restoration Features Data Model",
+    "section": "Workflow",
+    "text": "Workflow\nAccomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the task completed in each step. Use the top menu to explore the details of each step.\n\nExtract Schema\n\nThis step of the process extracts the database schema from the running RDMS.\nThe RDMS schema is then converted into Resource Description Format (RDF) format.\nThis project will use Terse RDF known as Turtle.\n\n\n\nAssign Standards\n\n\nAdd Metadata\n\n\nValidate"
+  },
+  {
+    "objectID": "03-add.html",
+    "href": "03-add.html",
+    "title": "Add Metadata",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "01-extract.html",
+    "href": "01-extract.html",
+    "title": "Extract Schema",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "02-assign.html",
+    "href": "02-assign.html",
+    "title": "Assign Standards",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "04-validate.html",
+    "href": "04-validate.html",
+    "title": "Validate",
+    "section": "",
+    "text": "Back to top"
   }
 ]

@@ -4,11 +4,32 @@ project:
 
 website:
   title: "Restoration Features"
+  favicon: data/castle.png
+  open-graph: true
+  back-to-top-navigation: true
+  page-footer: 
+    background: light
+    left: "Made with ❤️ by USACE" 
   navbar:
+    logo: data/castle.png
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/MVR-GIS/restoration_features_dm
+          - text: Report a Bug
+            href:  https://github.com/MVR-GIS/restoration_features_dm/issues
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: 01-extract.qmd
+        text: Extract
+      - href: 02-assign.qmd
+        text: Assign
+      - href: 03-add.qmd
+        text: Add
+      - href: 04-validate.qmd
+        text: Validate
 
 format:
   html:

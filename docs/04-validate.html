@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Restoration Features Data Model – Restoration Features</title>
+<title>Validate – Restoration Features</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,8 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Restoration Features Data Model – Restoration Features">
-<meta property="og:description" content="">
+<meta property="og:title" content="Validate – Restoration Features">
 <meta property="og:site_name" content="Restoration Features">
 </head>
 
@@ -97,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -113,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Add</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./04-validate.html"> 
+    <a class="nav-link active" href="./04-validate.html" aria-current="page"> 
 <span class="menu-text">Validate</span></a>
   </li>  
 </ul>
@@ -142,30 +141,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem">Problem</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a>
-  <ul class="collapse">
-  <li><a href="#extract-schema" id="toc-extract-schema" class="nav-link" data-scroll-target="#extract-schema">Extract Schema</a></li>
-  <li><a href="#assign-standards" id="toc-assign-standards" class="nav-link" data-scroll-target="#assign-standards">Assign Standards</a></li>
-  <li><a href="#add-metadata" id="toc-add-metadata" class="nav-link" data-scroll-target="#add-metadata">Add Metadata</a></li>
-  <li><a href="#validate" id="toc-validate" class="nav-link" data-scroll-target="#validate">Validate</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Restoration Features Data Model</h1>
+<h1 class="title">Validate</h1>
 </div>
 
 
@@ -182,53 +166,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="purpose" class="level2">
-<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (<a href="https://www.mvr.usace.army.mil/missions/environmental-stewardship/upper-mississippi-river-restoration/">UMRR</a> , <a href="https://www.mvr.usace.army.mil/nesp/">NESP</a>) on the Upper Mississippi River System (UMRS).</p>
-</section>
-<section id="problem" class="level2">
-<h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<p>Data integration across USACE is hamstrung by a lack of data stardardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperability declines. USACE is not alone in this problem.</p>
-<blockquote class="blockquote">
-<p>One problem is that data are insufficiently described to understand what they are or how they were produced. A second issue is that no single vocabulary provides all key metadata fields required to support basic scientific use cases. A third issue is that data catalogs and data repositories all use different metadata standards, if they use any standard at all, and this prevents easy search and aggregation of data. Therefore, we need a guide to indicate what are the essential metadata for a dataset description, and the manner in which we can express it.</p>
-</blockquote>
-<p>Dataset Descriptions: HCLS Community Profile, W3C Interest Group Note 14 May 2015: <a href="https://www.w3.org/TR/hcls-dataset/" class="uri">https://www.w3.org/TR/hcls-dataset/</a></p>
-</section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>To address these problems, this project has adopted the following objectives:</p>
-<ul>
-<li>Develop a process to document the data model of an existing system.</li>
-<li>Define a methology for applying metadata standards to each level of a data model.</li>
-<li>Produce human-readable documentation for both developers and consumers.</li>
-<li>Produce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology.</li>
-<li>Define a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time.</li>
-<li>Define a generic process that can be applied to modeling any USACE data system.</li>
-</ul>
-</section>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
-<p>Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the task completed in each step. Use the top menu to explore the details of each step.</p>
-<section id="extract-schema" class="level3">
-<h3 class="anchored" data-anchor-id="extract-schema">Extract Schema</h3>
-<ul>
-<li>This step of the process extracts the database schema from the running RDMS.</li>
-<li>The RDMS schema is then converted into Resource Description Format (RDF) format.</li>
-<li>This project will use Terse RDF known as <a href="https://www.w3.org/TR/turtle/">Turtle</a>.</li>
-</ul>
-</section>
-<section id="assign-standards" class="level3">
-<h3 class="anchored" data-anchor-id="assign-standards">Assign Standards</h3>
-</section>
-<section id="add-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="add-metadata">Add Metadata</h3>
-</section>
-<section id="validate" class="level3">
-<h3 class="anchored" data-anchor-id="validate">Validate</h3>
 
 
-</section>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
