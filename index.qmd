@@ -3,10 +3,10 @@ title: "Restoration Features Data Model"
 ---
 
 ## Purpose
-This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs ([UMRR](https://www.mvr.usace.army.mil/missions/environmental-stewardship/upper-mississippi-river-restoration/) , [NESP](https://www.mvr.usace.army.mil/nesp/)) on the Upper Mississippi River System (UMRS). 
+This site describes a workflow for developing and maintaining documentation for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs ([UMRR](https://www.mvr.usace.army.mil/missions/environmental-stewardship/upper-mississippi-river-restoration/) , [NESP](https://www.mvr.usace.army.mil/nesp/)) on the Upper Mississippi River System (UMRS). 
 
 ## Problem
-Data integration across USACE is hamstrung by a lack of data stardardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperability declines. USACE is not alone in this problem.
+Data integration across USACE is hamstrung by a lack of data standardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperablity declines. USACE is not alone in this problem.
 
 > One problem is that data are insufficiently described to understand what they are or how they were produced. A second issue is that no single vocabulary provides all key metadata fields required to support basic scientific use cases. A third issue is that data catalogs and data repositories all use different metadata standards, if they use any standard at all, and this prevents easy search and aggregation of data. Therefore, we need a guide to indicate what are the essential metadata for a dataset description, and the manner in which we can express it.
 
@@ -15,20 +15,20 @@ Dataset Descriptions: HCLS Community Profile, W3C Interest Group Note 14 May 201
 ## Objectives
 To address these problems, this project has adopted the following objectives:
 
-* Develop a process to document the data model of an existing system. 
-* Define a methology for applying metadata standards to each level of a data model. 
-* Produce human-readable documentation suitable for both developers and consumers. 
-* Produce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology. 
-* Define a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time. 
+* Develop a process to document the data model of an existing USACE data system. 
+* Define a methodology for applying metadata standards to each level of a data model. 
+* Derive a machine-readable ontology module of the running system suitable for inclusion in an agency-wide ontology. 
+* Output human-readable documentation suitable for both developers and consumers. 
+* Define a reproducible workflow to maintain the documentation as a system evolves. 
 * Define a generic process that can be applied to modeling any USACE data system. 
 
 ## Workflow
-Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the tasks completed in each step. Use the top menu to explore the details and results of each step.  
+Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summary of the tasks completed in each step. Use the top menu to explore the details and results of each step.  
 
 ### Extract Schema
 * This step of the process extracts the database schema from the running Relational Database Management System (RDMS). 
-* The RDMS schema is then converted into Resource Description Format (RDF) format. 
-* This project will use Terse RDF known as [Turtle](https://www.w3.org/TR/turtle/). 
+* The RDMS schema is then converted into Resource Description Format (RDF) format. This project will use Terse RDF known as [Turtle](https://www.w3.org/TR/turtle/). 
+* Identify shortcomings of the 
 * Visualize the results for quality control (e.g., knowledge graph).
 
 ### Assign Standards
@@ -42,8 +42,8 @@ Accomplishing these objectives requires a stepwise approach to derive from a run
 * Visualize the results for quality control (e.g., knowledge graph, pyLODE docs, data dictionary)
 
 ### Validate
-* Define competancy questions. 
-* Load ontology into a reasoner to test competancy questions.
+* Define competency questions. 
+* Load ontology into a reasoner to test competency questions.
 * Iterate through the above steps to remediate test findings. 
 * Process and export final machine-readable artifacts. 
 

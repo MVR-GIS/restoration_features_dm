@@ -4,35 +4,35 @@
     "href": "index.html",
     "title": "Restoration Features Data Model",
     "section": "",
-    "text": "This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
+    "text": "This site describes a workflow for developing and maintaining documentation for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
   },
   {
     "objectID": "index.html#purpose",
     "href": "index.html#purpose",
     "title": "Restoration Features Data Model",
     "section": "",
-    "text": "This site describes a workflow for developing and maintaining documention for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
+    "text": "This site describes a workflow for developing and maintaining documentation for the USACE Restoration Features Data Model used by USACE ecosystem restoration programs (UMRR , NESP) on the Upper Mississippi River System (UMRS)."
   },
   {
     "objectID": "index.html#problem",
     "href": "index.html#problem",
     "title": "Restoration Features Data Model",
     "section": "Problem",
-    "text": "Problem\nData integration across USACE is hamstrung by a lack of data stardardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperability declines. USACE is not alone in this problem.\n\nOne problem is that data are insufficiently described to understand what they are or how they were produced. A second issue is that no single vocabulary provides all key metadata fields required to support basic scientific use cases. A third issue is that data catalogs and data repositories all use different metadata standards, if they use any standard at all, and this prevents easy search and aggregation of data. Therefore, we need a guide to indicate what are the essential metadata for a dataset description, and the manner in which we can express it.\n\nDataset Descriptions: HCLS Community Profile, W3C Interest Group Note 14 May 2015: https://www.w3.org/TR/hcls-dataset/"
+    "text": "Problem\nData integration across USACE is hamstrung by a lack of data standardization policies and procedures. As a result, data systems are not consistently or thoroughly documented. This leads to a vicious cycle: as data systems proliferate, interoperablity declines. USACE is not alone in this problem.\n\nOne problem is that data are insufficiently described to understand what they are or how they were produced. A second issue is that no single vocabulary provides all key metadata fields required to support basic scientific use cases. A third issue is that data catalogs and data repositories all use different metadata standards, if they use any standard at all, and this prevents easy search and aggregation of data. Therefore, we need a guide to indicate what are the essential metadata for a dataset description, and the manner in which we can express it.\n\nDataset Descriptions: HCLS Community Profile, W3C Interest Group Note 14 May 2015: https://www.w3.org/TR/hcls-dataset/"
   },
   {
     "objectID": "index.html#objectives",
     "href": "index.html#objectives",
     "title": "Restoration Features Data Model",
     "section": "Objectives",
-    "text": "Objectives\nTo address these problems, this project has adopted the following objectives:\n\nDevelop a process to document the data model of an existing system.\nDefine a methology for applying metadata standards to each level of a data model.\nProduce human-readable documentation suitable for both developers and consumers.\nProduce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology.\nDefine a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time.\nDefine a generic process that can be applied to modeling any USACE data system."
+    "text": "Objectives\nTo address these problems, this project has adopted the following objectives:\n\nDevelop a process to document the data model of an existing USACE data system.\nDefine a methodology for applying metadata standards to each level of a data model.\nDerive a machine-readable ontology module of the running system suitable for inclusion in an agency-wide ontology.\nOutput human-readable documentation suitable for both developers and consumers.\nDefine a reproducible workflow to maintain the documentation as a system evolves.\nDefine a generic process that can be applied to modeling any USACE data system."
   },
   {
     "objectID": "index.html#workflow",
     "href": "index.html#workflow",
     "title": "Restoration Features Data Model",
     "section": "Workflow",
-    "text": "Workflow\nAccomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the tasks completed in each step. Use the top menu to explore the details and results of each step.\n\nExtract Schema\n\nThis step of the process extracts the database schema from the running Relational Database Management System (RDMS).\nThe RDMS schema is then converted into Resource Description Format (RDF) format.\nThis project will use Terse RDF known as Turtle.\nVisualize the results for quality control (e.g., knowledge graph).\n\n\n\nAssign Standards\n\nFor each object identified in the ontology, decide which top-level ontology will be used to define each object.\nEdit the turtle file to add ontology references to each object.\nVisualize the results for quality control (e.g., knowledge graph).\n\n\n\nAdd Metadata\n\nIdentify missing metadata elements required to meet project objectives (e.g. object definitions).\nEdit the turtle file to add missing annotations.\nVisualize the results for quality control (e.g., knowledge graph, pyLODE docs, data dictionary)\n\n\n\nValidate\n\nDefine competancy questions.\nLoad ontology into a reasoner to test competancy questions.\nIterate through the above steps to remediate test findings.\nProcess and export final machine-readable artifacts.\n\n\n\nFinal Documentation\n\nFinal QAQC’d documentation formatted for human-readable consumption."
+    "text": "Workflow\nAccomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summary of the tasks completed in each step. Use the top menu to explore the details and results of each step.\n\nExtract Schema\n\nThis step of the process extracts the database schema from the running Relational Database Management System (RDMS).\nThe RDMS schema is then converted into Resource Description Format (RDF) format. This project will use Terse RDF known as Turtle.\nIdentify shortcomings of the\nVisualize the results for quality control (e.g., knowledge graph).\n\n\n\nAssign Standards\n\nFor each object identified in the ontology, decide which top-level ontology will be used to define each object.\nEdit the turtle file to add ontology references to each object.\nVisualize the results for quality control (e.g., knowledge graph).\n\n\n\nAdd Metadata\n\nIdentify missing metadata elements required to meet project objectives (e.g. object definitions).\nEdit the turtle file to add missing annotations.\nVisualize the results for quality control (e.g., knowledge graph, pyLODE docs, data dictionary)\n\n\n\nValidate\n\nDefine competency questions.\nLoad ontology into a reasoner to test competency questions.\nIterate through the above steps to remediate test findings.\nProcess and export final machine-readable artifacts.\n\n\n\nFinal Documentation\n\nFinal QAQC’d documentation formatted for human-readable consumption."
   },
   {
     "objectID": "03-add.html",
