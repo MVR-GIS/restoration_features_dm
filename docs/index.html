@@ -156,6 +156,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#assign-standards" id="toc-assign-standards" class="nav-link" data-scroll-target="#assign-standards">Assign Standards</a></li>
   <li><a href="#add-metadata" id="toc-add-metadata" class="nav-link" data-scroll-target="#add-metadata">Add Metadata</a></li>
   <li><a href="#validate" id="toc-validate" class="nav-link" data-scroll-target="#validate">Validate</a></li>
+  <li><a href="#final-documentation" id="toc-final-documentation" class="nav-link" data-scroll-target="#final-documentation">Final Documentation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -200,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Develop a process to document the data model of an existing system.</li>
 <li>Define a methology for applying metadata standards to each level of a data model.</li>
-<li>Produce human-readable documentation for both developers and consumers.</li>
+<li>Produce human-readable documentation suitable for both developers and consumers.</li>
 <li>Produce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology.</li>
 <li>Define a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time.</li>
 <li>Define a generic process that can be applied to modeling any USACE data system.</li>
@@ -208,23 +209,46 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="workflow" class="level2">
 <h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
-<p>Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the task completed in each step. Use the top menu to explore the details of each step.</p>
+<p>Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the tasks completed in each step. Use the top menu to explore the details and results of each step.</p>
 <section id="extract-schema" class="level3">
 <h3 class="anchored" data-anchor-id="extract-schema">Extract Schema</h3>
 <ul>
-<li>This step of the process extracts the database schema from the running RDMS.</li>
+<li>This step of the process extracts the database schema from the running Relational Database Management System (RDMS).</li>
 <li>The RDMS schema is then converted into Resource Description Format (RDF) format.</li>
 <li>This project will use Terse RDF known as <a href="https://www.w3.org/TR/turtle/">Turtle</a>.</li>
+<li>Visualize the results for quality control (e.g., knowledge graph).</li>
 </ul>
 </section>
 <section id="assign-standards" class="level3">
 <h3 class="anchored" data-anchor-id="assign-standards">Assign Standards</h3>
+<ul>
+<li>For each object identified in the ontology, decide which top-level ontology will be used to define each object.</li>
+<li>Edit the turtle file to add ontology references to each object.</li>
+<li>Visualize the results for quality control (e.g., knowledge graph).</li>
+</ul>
 </section>
 <section id="add-metadata" class="level3">
 <h3 class="anchored" data-anchor-id="add-metadata">Add Metadata</h3>
+<ul>
+<li>Identify missing metadata elements required to meet project objectives (e.g.&nbsp;object definitions).</li>
+<li>Edit the turtle file to add missing annotations.</li>
+<li>Visualize the results for quality control (e.g., knowledge graph, pyLODE docs, data dictionary)</li>
+</ul>
 </section>
 <section id="validate" class="level3">
 <h3 class="anchored" data-anchor-id="validate">Validate</h3>
+<ul>
+<li>Define competancy questions.</li>
+<li>Load ontology into a reasoner to test competancy questions.</li>
+<li>Iterate through the above steps to remediate test findings.</li>
+<li>Process and export final machine-readable artifacts.</li>
+</ul>
+</section>
+<section id="final-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="final-documentation">Final Documentation</h3>
+<ul>
+<li>Final QAQC’d documentation formatted for human-readable consumption.</li>
+</ul>
 
 
 </section>

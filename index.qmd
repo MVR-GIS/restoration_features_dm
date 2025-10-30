@@ -17,22 +17,35 @@ To address these problems, this project has adopted the following objectives:
 
 * Develop a process to document the data model of an existing system. 
 * Define a methology for applying metadata standards to each level of a data model. 
-* Produce human-readable documentation for both developers and consumers. 
+* Produce human-readable documentation suitable for both developers and consumers. 
 * Produce a machine-readable ontology module of the running system suitable for inclusion in and agency-wide ontology. 
 * Define a set of reprodicible steps to maintain the documentation as a systems evolves through maintanence over time. 
 * Define a generic process that can be applied to modeling any USACE data system. 
 
 ## Workflow
-Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the task completed in each step. Use the top menu to explore the details of each step.  
+Accomplishing these objectives requires a stepwise approach to derive from a running system a series of documentation artifacts that progressively define standards for each level of the data model. Below is a summay of the tasks completed in each step. Use the top menu to explore the details and results of each step.  
 
 ### Extract Schema
-* This step of the process extracts the database schema from the running RDMS. 
+* This step of the process extracts the database schema from the running Relational Database Management System (RDMS). 
 * The RDMS schema is then converted into Resource Description Format (RDF) format. 
 * This project will use Terse RDF known as [Turtle](https://www.w3.org/TR/turtle/). 
+* Visualize the results for quality control (e.g., knowledge graph).
 
 ### Assign Standards
-
+* For each object identified in the ontology, decide which top-level ontology will be used to define each object.
+* Edit the turtle file to add ontology references to each object. 
+* Visualize the results for quality control (e.g., knowledge graph). 
 
 ### Add Metadata
+* Identify missing metadata elements required to meet project objectives (e.g. object definitions).
+* Edit the turtle file to add missing annotations. 
+* Visualize the results for quality control (e.g., knowledge graph, pyLODE docs, data dictionary)
 
 ### Validate
+* Define competancy questions. 
+* Load ontology into a reasoner to test competancy questions.
+* Iterate through the above steps to remediate test findings. 
+* Process and export final machine-readable artifacts. 
+
+### Final Documentation
+* Final QAQC'd documentation formatted for human-readable consumption.  
